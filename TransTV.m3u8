@@ -1,8 +1,69 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=384000,RESOLUTION=1280x720
-https://central.net.mediateknikelektrindo.com/centraldigitaltvstream/transtv.mpd
-#EXT-X-STREAM-INF:BANDWIDTH=280000,RESOLUTION=854x480
-https://central.net.mediateknikelektrindo.com/centraldigitaltvstream/transtv.mpd
-#EXT-X-STREAM-INF:BANDWIDTH=192000,RESOLUTION=640x360
-https://central.net.mediateknikelektrindo.com/centraldigitaltvstream/transtv.mpd
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns="urn:mpeg:dash:schema:mpd:2011"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:scte35="https://schemas.scte.org/35/scte_35_20211104.xsd"
+     xmlns:cenc="urn:mpeg:cenc:2013"
+     xmlns:mspr="urn:microsoft:playready"
+     xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+     profiles="urn:mpeg:dash:profile:isoff-live:2011"
+     type="dynamic"
+     minimumUpdatePeriod="PT1.63S" 
+     publishTime="2025-10-04T08:09:08.310Z" 
+     availabilityStartTime="2025-09-04T13:34:03.585Z" 
+     timeShiftBufferDepth="PT24.0S"
+     suggestedPresentationDelay="PT10.0S" 
+     minBufferTime="PT6.0S">
+<ProgramInformation>
+    <Title>transtv.smil</Title>
+</ProgramInformation>
+<Location>https://cdn14jtedge.indihometv.com/dass/133/transtv/manifest_wuseetv.mpd?encp=FRhpsPM815W6J2BwnoTHSg&amp;uid=&amp;expp=1759575986</Location>
+<Period id="0" start="PT0.0S">
+    <AdaptationSet id="0" group="1" mimeType="video/mp4" maxWidth="1280" maxHeight="720" par="16:9" frameRate="25" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+        <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="685d1249-59a9-4f89-8727-60636a868956"/>
+        <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine">
+            <cenc:pssh>AAAAOHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABgSEGhdEklZqU+JhydgY2qGiVZI49yVmwY=</cenc:pssh>
+        </ContentProtection>
+        <ContentProtection schemeIdUri="urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95" value="MSPR 2.0">
+            <cenc:pssh>AAADenBzc2gAAAAAmgTweZhAQoarkuZb4IhflQAAA1paAwAAAQABAFADPABXAFIATQBIAEUAQQBEAEUAUgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAEQAUgBNAC8AMgAwADAANwAvADAAMwAvAFAAbABhAHkAUgBlAGEAZAB5AEgAZQBhAGQAZQByACIAIAB2AGUAcgBzAGkAbwBuAD0AIgA0AC4AMAAuADAALgAwACIAPgA8AEQAQQBUAEEAPgA8AFAAUgBPAFQARQBDAFQASQBOAEYATwA+ADwASwBFAFkATABFAE4APgAxADYAPAAvAEsARQBZAEwARQBOAD4APABBAEwARwBJAEQAPgBBAEUAUwBDAFQAUgA8AC8AQQBMAEcASQBEAD4APAAvAFAAUgBPAFQARQBDAFQASQBOAEYATwA+ADwASwBJAEQAPgBTAFIASgBkAGEASwBsAFoAaQBVACsASABKADIAQgBqAGEAbwBhAEoAVgBnAD0APQA8AC8ASwBJAEQAPgA8AEMASABFAEMASwBTAFUATQA+AFkAcAB3AFkATAA2AE4AUAArAEQAVQA9ADwALwBDAEgARQBDAEsAUwBVAE0APgA8AEwAQQBfAFUAUgBMAD4AaAB0AHQAcAA6AC8ALwBWAE8ALQBQAFQALQBMAEkAQwBNAE8ARwAxADoAMgAwADIAOAAxAC8AdgAyAC8AcwBlAHIAdgBpAGMAZQBzAC8AVgBvAFAAbABhAHkAUgBlAGEAZAB5AEEAcQB1AGkAcgBlAEwAaQBjAGUAbgBzAGUALgBjAGYAbQA8AC8ATABBAF8AVQBSAEwAPgA8AEwAVQBJAF8AVQBSAEwAPgBoAHQAdABwADoALwAvAFYATwAtAFAAVAAtAEwASQBDAE0ATwBHADEAOgAyADAAMgA4ADEALwB2ADIALwBzAGUAcgB2AGkAYwBlAHMALwBWAG8AUABsAGEAeQBSAGUAYQBkAHkAQQBxAHUAaQByAGUATABpAGMAZQBuAHMAZQAuAGMAZgBtADwALwBMAFUASQBfAFUAUgBMAD4APAAvAEQAQQBUAEEAPgA8AC8AVwBSAE0ASABFAEEARABFAFIAPgA=</cenc:pssh>
+            <mspr:pro>RgIAAAEAAQA8AjwAVwBSAE0ASABFAEEARABFAFIAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAG0AaQBjAHIAbwBzAG8AZgB0AC4AYwBvAG0ALwBEAFIATQAvADIAMAAwADcALwAwADMALwBQAGwAYQB5AFIAZQBhAGQAeQBIAGUAYQBkAGUAcgAiACAAdgBlAHIAcwBpAG8AbgA9ACIANAAuADAALgAwAC4AMAAiAD4APABEAEEAVABBAD4APABQAFIATwBUAEUAQwBUAEkATgBGAE8APgA8AEsARQBZAEwARQBOAD4AMQA2ADwALwBLAEUAWQBMAEUATgA+ADwAQQBMAEcASQBEAD4AQQBFAFMAQwBUAFIAPAAvAEEATABHAEkARAA+ADwALwBQAFIATwBUAEUAQwBUAEkATgBGAE8APgA8AEsASQBEAD4AUwBSAEoAZABhAEsAbABaAGkAVQArAEgASgAyAEIAagBhAG8AYQBKAFYAZwA9AD0APAAvAEsASQBEAD4APABMAEEAXwBVAFIATAA+ADwALwBMAEEAXwBVAFIATAA+ADwARABTAF8ASQBEAD4APAAvAEQAUwBfAEkARAA+ADwAQwBIAEUAQwBLAFMAVQBNAD4AWQBwAHcAWQBMADYATgBQACsARABVAD0APAAvAEMASABFAEMASwBTAFUATQA+ADwALwBEAEEAVABBAD4APAAvAFcAUgBNAEgARQBBAEQARQBSAD4A</mspr:pro>
+        </ContentProtection>
+        <SegmentTemplate timescale="90000" media="segment_ctvideo_cfm4s_rid$RepresentationID$_cs$Time$_w_useetv_mpd.m4s" initialization="segment_ctvideo_cfm4s_rid$RepresentationID$_cinit_w_useetv_mpd.m4s">
+            <SegmentTimeline>
+                <S t="231522883920" d="360000"/>
+                <S d="540000"/>
+                <S d="360000"/>
+                <S d="540000"/>
+                <S d="360000"/>
+            </SegmentTimeline>
+        </SegmentTemplate>
+        <Representation id="p0va0br400000" codecs="avc1.420029" width="426" height="240" sar="1:1" bandwidth="400000" />
+        <Representation id="p0va0br800000" codecs="avc1.4d0029" width="640" height="360" sar="1:1" bandwidth="800000" />
+        <Representation id="p0va0br1200000" codecs="avc1.640029" width="960" height="540" sar="1:1" bandwidth="1200000" />
+        <Representation id="p0va0br1500000" codecs="avc1.640029" width="1280" height="720" sar="1:1" bandwidth="1500000" />
+    </AdaptationSet>
+    <AdaptationSet id="1" group="2" mimeType="audio/mp4" lang="eng" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="1"/>
+        <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="685d1249-59a9-4f89-8727-60636a868956"/>
+        <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine">
+            <cenc:pssh>AAAAOHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABgSEGhdEklZqU+JhydgY2qGiVZI49yVmwY=</cenc:pssh>
+        </ContentProtection>
+        <ContentProtection schemeIdUri="urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95" value="MSPR 2.0">
+            <cenc:pssh>AAADenBzc2gAAAAAmgTweZhAQoarkuZb4IhflQAAA1paAwAAAQABAFADPABXAFIATQBIAEUAQQBEAEUAUgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAEQAUgBNAC8AMgAwADAANwAvADAAMwAvAFAAbABhAHkAUgBlAGEAZAB5AEgAZQBhAGQAZQByACIAIAB2AGUAcgBzAGkAbwBuAD0AIgA0AC4AMAAuADAALgAwACIAPgA8AEQAQQBUAEEAPgA8AFAAUgBPAFQARQBDAFQASQBOAEYATwA+ADwASwBFAFkATABFAE4APgAxADYAPAAvAEsARQBZAEwARQBOAD4APABBAEwARwBJAEQAPgBBAEUAUwBDAFQAUgA8AC8AQQBMAEcASQBEAD4APAAvAFAAUgBPAFQARQBDAFQASQBOAEYATwA+ADwASwBJAEQAPgBTAFIASgBkAGEASwBsAFoAaQBVACsASABKADIAQgBqAGEAbwBhAEoAVgBnAD0APQA8AC8ASwBJAEQAPgA8AEMASABFAEMASwBTAFUATQA+AFkAcAB3AFkATAA2AE4AUAArAEQAVQA9ADwALwBDAEgARQBDAEsAUwBVAE0APgA8AEwAQQBfAFUAUgBMAD4AaAB0AHQAcAA6AC8ALwBWAE8ALQBQAFQALQBMAEkAQwBNAE8ARwAxADoAMgAwADIAOAAxAC8AdgAyAC8AcwBlAHIAdgBpAGMAZQBzAC8AVgBvAFAAbABhAHkAUgBlAGEAZAB5AEEAcQB1AGkAcgBlAEwAaQBjAGUAbgBzAGUALgBjAGYAbQA8AC8ATABBAF8AVQBSAEwAPgA8AEwAVQBJAF8AVQBSAEwAPgBoAHQAdABwADoALwAvAFYATwAtAFAAVAAtAEwASQBDAE0ATwBHADEAOgAyADAAMgA4ADEALwB2ADIALwBzAGUAcgB2AGkAYwBlAHMALwBWAG8AUABsAGEAeQBSAGUAYQBkAHkAQQBxAHUAaQByAGUATABpAGMAZQBuAHMAZQAuAGMAZgBtADwALwBMAFUASQBfAFUAUgBMAD4APAAvAEQAQQBUAEEAPgA8AC8AVwBSAE0ASABFAEEARABFAFIAPgA=</cenc:pssh>
+            <mspr:pro>RgIAAAEAAQA8AjwAVwBSAE0ASABFAEEARABFAFIAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAG0AaQBjAHIAbwBzAG8AZgB0AC4AYwBvAG0ALwBEAFIATQAvADIAMAAwADcALwAwADMALwBQAGwAYQB5AFIAZQBhAGQAeQBIAGUAYQBkAGUAcgAiACAAdgBlAHIAcwBpAG8AbgA9ACIANAAuADAALgAwAC4AMAAiAD4APABEAEEAVABBAD4APABQAFIATwBUAEUAQwBUAEkATgBGAE8APgA8AEsARQBZAEwARQBOAD4AMQA2ADwALwBLAEUAWQBMAEUATgA+ADwAQQBMAEcASQBEAD4AQQBFAFMAQwBUAFIAPAAvAEEATABHAEkARAA+ADwALwBQAFIATwBUAEUAQwBUAEkATgBGAE8APgA8AEsASQBEAD4AUwBSAEoAZABhAEsAbABaAGkAVQArAEgASgAyAEIAagBhAG8AYQBKAFYAZwA9AD0APAAvAEsASQBEAD4APABMAEEAXwBVAFIATAA+ADwALwBMAEEAXwBVAFIATAA+ADwARABTAF8ASQBEAD4APAAvAEQAUwBfAEkARAA+ADwAQwBIAEUAQwBLAFMAVQBNAD4AWQBwAHcAWQBMADYATgBQACsARABVAD0APAAvAEMASABFAEMASwBTAFUATQA+ADwALwBEAEEAVABBAD4APAAvAFcAUgBNAEgARQBBAEQARQBSAD4A</mspr:pro>
+        </ContentProtection>
+        <SegmentTemplate timescale="24000" media="segment_ctaudio_cfm4s_rid$RepresentationID$_cs$Time$_w_useetv_mpd.m4s" initialization="segment_ctaudio_cfm4s_rid$RepresentationID$_cinit_w_useetv_mpd.m4s">
+            <SegmentTimeline>
+                <S t="61739436240" d="96264"/>
+                <S d="143352"/>
+                <S d="96264"/>
+                <S d="144384"/>
+                <S d="95232"/>
+            </SegmentTimeline>
+        </SegmentTemplate>
+        <Representation id="p0aa0br44100" codecs="mp4a.40.2" audioSamplingRate="24000" bandwidth="44100">
+        </Representation>
+    </AdaptationSet>
+</Period>
+<UTCTiming schemeIdUri="urn:mpeg:dash:utc:direct:2014" value="2025-10-04T08:09:08.310Z"/>
+</MPD>
