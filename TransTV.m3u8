@@ -1,1 +1,8 @@
-
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=384000,RESOLUTION=1280x720
+https://central.net.mediateknikelektrindo.com/centraldigitaltvstream/transtv.mpd
+#EXT-X-STREAM-INF:BANDWIDTH=280000,RESOLUTION=854x480
+https://central.net.mediateknikelektrindo.com/centraldigitaltvstream/transtv.mpd
+#EXT-X-STREAM-INF:BANDWIDTH=192000,RESOLUTION=640x360
+https://central.net.mediateknikelektrindo.com/centraldigitaltvstream/transtv.mpd
