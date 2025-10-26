@@ -1,9 +1,4 @@
-#EXTM3U
-#EXT-X-VERSION:4
-#EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-STREAM-INF:BANDWIDTH=7140692,AVERAGE-BANDWIDTH=7031069,RESOLUTION=1920x1020,FRAME-RATE=25.000,CODECS="avc1.64001F,mp4a.40.2",AUDIO="audio_0"
-#EXTINF:-1 tvg-logo="https://i.imgur.com/QYWhKxE.jpg" group-title="Sport Update",SPOTV
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=e60ece8f0d9042fcb52508055ec48e5e:213f438bd4961cda987d41b7f154f1e5
-https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mpd/SPOTVHD.mpd
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://drm.useetv.com/proxy?playid=8KDa-63Lr2yszSod5nBCCQ&exp=1656747315&tvcode=bioskopindonesia&uid=2937482&utoken=YmY0YWU2ODg3MTZkN2ZjNzhjMDRmNTY0NDlmNWQ3OGY=
+#EXTINF:-1 tvg-id="BioskopIndonesia.id" tvg-logo="https://i.ibb.co/gTN6Xc2/bioskopindonesia-modified.png" group-title="Hiburan & Gaya Hidup", Bioskop Indonesia
+https://cdngb196.indihometv.com/dass/107/bioskopindonesia/manifest_wuseetv.mpd?encp=UY3fb7zNvaL2NeqhxiTNSg&uid=&expp=1761505401
