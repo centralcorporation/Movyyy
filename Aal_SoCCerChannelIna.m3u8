@@ -1,4 +1,3 @@
 #EXTM3U  
-
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3988000,network-caching=10000, http-reconnect=true 
 http://filex.me:8080/live/000003/000003/302239.m3u8
