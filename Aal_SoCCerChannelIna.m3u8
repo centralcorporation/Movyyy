@@ -1,5 +1,4 @@
-#EXTM3U 
-#EXT-X-TARGETDURATION:2 
+#EXTM3U  
 #EXT-X-MEDIA-SEQUENCE:1 
 #EXTVLCOPT:network-caching=10000 
 #EXTVLCOPT:http-reconnect=true 
