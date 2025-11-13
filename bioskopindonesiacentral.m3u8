@@ -1,4 +1,5 @@
+#KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://drm.useetv.com/proxy?playid=8KDa-63Lr2yszSod5nBCCQ&exp=1656747315&tvcode=bioskopindonesia&uid=2937482&utoken=YmY0YWU2ODg3MTZkN2ZjNzhjMDRmNTY0NDlmNWQ3OGY=
-#EXTINF:-1 tvg-id="BioskopIndonesia.id" tvg-logo="https://i.ibb.co/gTN6Xc2/bioskopindonesia-modified.png" group-title="Hiburan & Gaya Hidup", Bioskop Indonesia
-https://cdngb196.indihometv.com/dass/107/bioskopindonesia_dash/manifest_wuseetv.mpd?enc=bKs8DQG3i39AqhrQ1HyDww&exp=1656744015&encp=IPTm0yml8MKpKrdRC50TFw&expp=1656752715&uid=YmY0YWU2ODg3MTZkN2ZjNzhjMDRmNTY0NDlmNWQ3OGY=
+#KODIPROP:inputstream.adaptive.license_key=https://lic-cubmux.konslet.workers.dev/4rr0w/play.wv
+EXTINF: -1 tvg-logo="https://i.ibb.co.com/hsPmSbf/BIOSKOP-INDO.jpg" group-title="ENTERTAINMENT", BIOSKOP INDONESIA
+https://cdnjkt913.transvision.co.id:1000/live/master/4/4028c6856fd0d66d0170341bf1000905/manifest.m3u8
